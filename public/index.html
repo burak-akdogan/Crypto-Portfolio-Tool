@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Portfolio Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+            color: #000000;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Portfolio Tool</h1>
+        
+        <div id="cryptoForm">
+            <div id="tokens"></div>
+            <button onclick="addToken()">Add Token</button>
+            <button onclick="saveTokenDetails()">Save</button><br><br>
+
+            <!-- Button to calculate profit/loss -->
+            <button onclick="calculateProfitLoss()">Calculate Profit/Loss</button>
+        </div>
+
+        <!-- Portfolio Overview -->
+        <div id="portfolioOverview"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Developed by <b>Burak Akdogan<b></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
